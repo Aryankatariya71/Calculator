@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        div.calculator1 i {
+            font-size: 85px;
+            margin-bottom: 355px;
+            margin-left: 140px;
+            color: B1B1B1;
+        }
+        body {
+            display: flex;
+            justify-content: space-around;
+        }
+    </style>
+</head>
+
+<body>
+    
+
+
+    <div id="calculator">
+        <header id="iphone_top_bar">
+            <p id="dynaimc_island"></p>
+        </header>
+        <div>
+            <input id="display" readonly>
+            <div id="keys">
+                <button onclick="appendToDisplay('+')" class="operator-btn">+</button>
+                <button onclick="appendToDisplay('7')">7</button>
+                <button onclick="appendToDisplay('8')">8</button>
+                <button onclick="appendToDisplay('9')">9</button>
+                <button onclick="appendToDisplay('-')" class="operator-btn">-</button>
+                <button onclick="appendToDisplay('4')">4</button>
+                <button onclick="appendToDisplay('5')">5</button>
+                <button onclick="appendToDisplay('6')">6</button>
+                <button onclick="appendToDisplay('*')" class="operator-btn">*</button>
+                <button onclick="appendToDisplay('1')">1</button>
+                <button onclick="appendToDisplay('2')">2</button>
+                <button onclick="appendToDisplay('3')">3</button>
+                <button onclick="appendToDisplay('/')" class="operator-btn">/</button>
+                <button onclick="appendToDisplay('0')">0</button>
+                <button onclick="appendToDisplay('.')">.</button>
+                <button onclick="calculate()">=</button>
+                <button onclick="clearDisplay()" class="operator-btn">C</button>
+            </div>
+            <p id="bottom_button"></p>
+        </div>
+    </div>
+    <h1>IPHONE 15</h1>
+
+    <div class="calculator1">
+        <div class="camera">
+             <div class="camera1">
+                <div class="circle"></div>
+             </div>
+             <div class="camera1"></div>
+             <div class="camera1" style="position: relative;top: -50%;left: 25%;"></div>
+            
+            </div>
+             <i class="fa-brands fa-apple" ></i>
+             
+    </div>
+
+    
+
+
+    <script src="index.js"></script>
+</body>
+
+</html>
